@@ -1,0 +1,44 @@
+import java.util.*;
+class character
+{
+ public static void main(String args[])
+ {
+  Scanner in=new Scanner(System.in);
+    System.out.println("Enter the character:");
+     char ch=in.next().charAt(0);
+
+   switch(ch){
+   case 'a':
+   case 'e':
+    case 'i':
+   case 'o':
+   case'u':
+  case'A':
+  case'E':
+  case 'I':
+  case 'O':
+   case'U':
+   System.out.println(ch+ "is vowel");
+  break;
+  default:
+   System.out.println(ch+ "is consonant");
+  }
+}
+}
+
+   
+   OUTPUT:
+   
+D:\jyothi>javac character1.java
+
+D:\jyothi>java character
+Enter the character:
+q
+q is consonant
+
+D:\jyothi>java character
+Enter the character:
+a
+a is vowel
+   
+© 2021 GitHub, Inc.
