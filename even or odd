@@ -1,0 +1,52 @@
+import java.util.Scanner;
+class even_odd
+{
+ public static void main(String args[])
+ {
+   Scanner in=new Scanner(System.in);
+   int n;
+   System.out.print("Enter no of elements in array:");
+  n=in.nextInt();
+  int a[]=new int[n];
+  System.out.println("Enter allthe elements:");
+  for(int i=0;i<n;i++)
+  {
+   a[i]=in.nextInt();
+  }
+  System.out.print("Odd numbers:");
+  for(int i=0;i<n;i++)
+  {
+   if(a[i]%2!=0)
+   {
+    System.out.print(a[i]+" ");
+   }
+  }
+  System.out.println(" ");
+  System.out.print("Even numbers:");
+  for(int i=0;i<n;i++)
+  {
+   if(a[i]%2==0)
+   {
+    System.out.print(a[i]+" ");
+   }
+  }
+ }
+}
+
+
+
+OUTPUT:
+
+D:\jyothi>javac even_odd1.java
+
+D:\jyothi>java even_odd
+Enter no of elements in array:6
+Enter allthe elements:
+11
+12
+13
+14
+15
+16
+Odd numbers:11 13 15
+Even numbers:12 14 16
